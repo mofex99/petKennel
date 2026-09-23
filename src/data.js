@@ -18,5 +18,15 @@ export const initialData = [
       "https://media.istockphoto.com/id/1177353054/photo/male-silverback-western-lowland-gorilla.jpg?s=612x612&w=0&k=20&c=Y2DUtK_eOAuCu-QuIqZ5ePfkXS8ueBtxRNSh9HIxzak="
     ],
     imageIndex: 0
+  },
+  {
+  id: 3,
+  name: "Chop",
+  status:"Sad",
+  images: [
+    "/dog-sad.jpg",
+    "/dog-happy.jpg"
+  ],
+  imageIndex: 0
   }
 ];

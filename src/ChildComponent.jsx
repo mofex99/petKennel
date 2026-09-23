@@ -2,7 +2,7 @@ import React from 'react';
 
 class ChildComponent extends React.Component {
   render() {
-    const { id, name, image, status, onAction } = this.props;
+    const { id, name, image, status, onAction, onAdopt } = this.props;
 
     return (
       <div className="child-card">
@@ -10,6 +10,7 @@ class ChildComponent extends React.Component {
         <img src={image} alt={name} />
         <p>{status}</p>
         <button onClick={() => onAction(id)}>Change mood</button>
+        <button onClick={() => onAdopt(id)}>Adopt Me!</button>
       </div>
     );
   }

@@ -26,7 +26,13 @@ class App extends Component {
     });
 
     this.setState({ characters: updatedCharacters });
-  }
+  };
+
+  handleAdopt = (id) => {
+    const remainingCharacters = this.state.characters.filter((character) => character.id !== id);
+    this.setState({ characters: remainingCharacters });
+  };
+
 
   render() {
     return (
@@ -51,3 +57,6 @@ class App extends Component {
 }
 
 export default App;
+
+//my next step is to make the adopt button work so when it is clicked the animal is removed from the kennel / screen until refresh 
+
